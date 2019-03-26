@@ -1,0 +1,214 @@
+/*основний шрифт*/
+@font-face {
+    font-family: HelveticaNeueCyr;
+}
+
+
+
+header{
+    background:#285853;
+    width:100vw;
+    height:12vh;
+    position:relative;
+
+}
+header button{
+    position:absolute;
+    top:25%;
+    height:50%;
+    font-size:1.4vw!important;
+    padding:0!important;
+    overflow: hidden;
+}
+#log_out_button{
+    right:2%;
+    width:7%;
+    z-index:-10;
+
+}
+#log_out_button:hover{
+    color:#285853;
+}
+
+#add_doc_button{
+    right:11%;
+    width:13%;
+    color:#FFFFFF;
+    background: #F7C44F!important;
+    border-color:#F7C44F!important;
+    z-index:-10;
+}
+/*a little feature you can delete*/
+button:active {
+    transform: translateY(4px);
+}
+
+header h4 img,button{
+    height:80%;
+}
+header h4{
+    position:absolute;
+    left:1%;
+    top:10%;
+    height:100%;
+    font-size:4vh!important;
+    color:#FFFFFF;
+}
+#content{
+    background: #dfe8e9;
+    height:88vh;
+    overflow: auto;
+    position:relative;
+}
+#main_info{
+    position:absolute;
+    top:4%;
+    left:6%;
+    width:43%;
+    height:35%;
+
+    background: #3F937E;
+    border-radius: 20px;
+}
+
+#main_info img {
+    position: absolute;
+    height:80%;
+    top:10%;
+    left:5%;
+}
+#main_info p{
+    position:absolute;
+    top:9%;
+    left:43%;
+    right:5%;
+    font-size:5vh;
+    color:#FFFFFF;
+}
+
+#get_started{
+    position:absolute;
+    top:4%;
+    right:6%;
+    width:43%;
+    height:35%;
+    background: #3F937E;
+    border-radius: 20px;
+}
+#get_started h4{
+
+    margin-top:1%;
+    font-size:8vh!important;
+    color:#FFFFFF;
+}
+
+#get_started button{
+    color:#FFFFFF;
+    background: #F7C44F!important;
+    border-color:#F7C44F!important;
+    margin-top:3%;
+    height:25%;
+}
+#log_in_button{
+    position:absolute;
+    right:20%;
+    width:27%;
+    bottom:17%;
+}
+#register_button{
+    position:absolute;
+    left:20%;
+    width:27%;
+    bottom:17%;
+}
+
+#simple_instructions{
+    position:absolute;
+    top:42%;
+    left:6%;
+    width:88%;
+    height:54%;
+}
+#simple_instructions img{
+    position:absolute;
+    height:70%;
+    top:0;
+    border-radius: 20px;
+}
+#simple_instructions p{
+    color:#FFFFFF;
+    font-size: 5vh;
+    text-align:center;
+}
+#simple_instructions div{
+    position:absolute;
+    background:#285853;
+
+    height:7vh;
+    border-radius: 13px;
+    bottom:7%;
+}
+
+#arrow1{
+    left:30%!important;
+    height:30%!important;
+    top:23%!important;
+ }
+
+#arrow2{
+    left:60%!important;
+    height:30%!important;
+    top:23%!important;
+}
+#instruction_1{
+    width:26%;
+    left:4%;
+}
+
+
+#instruction_2{
+    width:26%;
+    left:34%;
+}
+
+#instruction_3{
+
+    width:30%;
+    right:4%;
+}
+#image_1{
+     left:10%;
+ }
+#image_2{
+
+    left:40%;
+}
+#image_3{
+
+  right:12%;
+}
+
+#footer{
+    position:absolute;
+    background:#285853;
+    width:100%;
+    height:12vh;
+   top:99%;
+    overflow: hidden;
+}
+
+#faq_footer_link{
+
+    position:absolute;
+    left:1%;
+    top:40%;
+    height:85%;
+    color:#FFFFFF;
+    width:20vw;
+    font-size:5vh!important;
+}
+
+#faq_footer_link:hover{
+    text-decoration:none!important;
+    color:#F7C44F!important;
+}

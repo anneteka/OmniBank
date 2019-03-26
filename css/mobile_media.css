@@ -1,0 +1,96 @@
+@media (max-width: 760px){
+
+
+    header button{
+        height:60%;
+        top:20%;
+        font-size:3.5vw!important;
+    }
+    #log_out_button{
+        right:2%;
+        width:15%;
+
+    }
+
+
+    #add_doc_button{
+        right:18%;
+        width:36%;
+    }
+    header h4{
+        font-size:4vw!important;
+    }
+
+    #main_info{
+        left:5%;
+        width:90%;
+    }
+    #main_info p{
+        left:40%;
+        font-size:4vh!important;
+    }
+    #main_info img{
+        height:70%;
+    }
+    #get_started{
+        width:90%;
+        top:44%;
+        left:5%;
+    }
+
+    #log_in_button{
+
+        right:10%;
+        width:37%;
+        bottom:20%;
+    }
+    #register_button{
+        left:10%;
+        width:37%;
+        bottom:20%;
+    }
+
+    #simple_instructions{
+        width:90%;
+        top:86%;
+        left:5%;
+    }
+    #simple_instructions p{
+        font-size:4.7vh!important;
+    }
+    #image_1{
+        left:30%;
+    }
+    #instruction_1{
+
+        width:86%;
+        left:7%;
+    }
+
+    #image_2{
+        top:99%!important;
+        left:30%;
+    }
+
+    #instruction_2{
+        top:175%!important;
+        width:86%;
+        left:7%;
+    }
+    #image_3{
+        top:198%!important;
+        left:30%;
+    }
+    #instruction_3{
+        top:273%!important;
+        width:86%;
+        left:7%;
+    }
+
+    #arrow1,#arrow2{
+        visibility: hidden!important;
+    }
+    #footer{
+        top:250%!important;
+    }
+}
