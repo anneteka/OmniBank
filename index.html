@@ -3,47 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OMNI bank</title>
-
+    <title>OmniBank</title>
     <link href="css/main.css" rel="stylesheet" media="screen">
     <link href="css/mobile_media.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
 </head>
+
 <body>
-<header>
 
-    <h4 class="display-4">  <img src="images/icon.png">OmniBank </h4>
-<button id="log_out_button" class="btn btn-outline-light" >Log out</button>
-    <button id="add_doc_button" class="btn btn-warning" >+Add document</button>
+<nav class="navbar navbar-expand-lg navbar-green">
+  <span class="navbar-brand" href="#"><img class="logo" src="images/icon.png">OmniBank</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-</header>
-<div id="content">
-    <div id="main_info">
-        <img src="images/icon.png"><p class="display-4"><i> Have access to your documents wherever you go </i></p>
-    </div>
-    <div id="get_started" class="text-center">
-        <h4 class="display-4"> Get started </h4>
-        <button id="register_button" class="btn btn-warning" >Register</button>
-        <button id="log_in_button" class="btn btn-warning " >Log in</button>
-    </div>
-    <div id="simple_instructions">
-        <div id="instruction_1"><p  class="display-4">Scan your documents</p></div>
-        <div id="instruction_2"> <p class="display-4">Verify your identity</p></div>
-        <div id="instruction_3"><p class="display-4">Use them everywhere</p></div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
 
-        <img id="image_1"src="images/doc_1.png">
-        <img src="images/arrow.png" id="arrow1">
-        <img id="image_2" src="images/doc_2.png">
-        <img src="images/arrow.png" id="arrow2" >
-        <img id="image_3"src="images/doc_3.png">
+      <button id="add_doc_button" class="btn btn-warning">+Add document</button>
+  <button id="log_out_button" class="btn btn-outline-light">Log out</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div id="main_info" class="landing-block col-md-6 col-12 col-sm-6">
+            <img src="images/icon.png" class="landing-image"><p><i> Have access to your documents wherever you go </i></p>
+        </div>
+        <div class="landing-block text-center col-md-6 col-12 col-sm-6">
+        <div id="get_started">
+            <h4>Get started</h4>
+            <button id="register_button" class="btn btn-warning" >Register</button>
+            <button id="log_in_button" class="btn btn-warning " >Log in</button>
+        </div>
+      </div>
     </div>
-    <footer id="footer"></footer>
+    <div id="simple_instructions" class="row text-center">
+        <div class="col-md-4 instruction">
+            <img id="image_1" class="landing-image" src="images/doc_1.png">
+            <p>Scan your documents</p>
+        </div>
+        <div class="col-md-4 instruction">
+            <img id="image_2" class="landing-image" src="images/doc_2.png">
+            <p>Verify your identity</p>
+
+        </div>
+        <div class="col-md-4 instruction">
+            <img id="image_3" class="landing-image" src="images/doc_3.png">
+            <p>Use them everywhere</p>
+
+        </div>
+    </div>
 </div>
 
 
 
 
+<footer></footer>
 
 
 

@@ -1,214 +1,123 @@
-/*основний шрифт*/
 @font-face {
-    font-family: HelveticaNeueCyr;
+	font-family: 'HelveticaNeueCyr';
+	src: url('../files/HelveticaNeueCyr-BoldItalic.eot');
+	src: local('HelveticaNeueCyr-BoldItalic'),
+		url('../files/HelveticaNeueCyr-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../files/HelveticaNeueCyr-BoldItalic.woff') format('woff'),
+		url('../files/HelveticaNeueCyr-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
 }
 
-
-
-header{
-    background:#285853;
-    width:100vw;
-    height:12vh;
-    position:relative;
-
-}
-header button{
-    position:absolute;
-    top:25%;
-    height:50%;
-    font-size:1.4vw!important;
-    padding:0!important;
-    overflow: hidden;
-}
-#log_out_button{
-    right:2%;
-    width:7%;
-    z-index:-10;
-
-}
-#log_out_button:hover{
-    color:#285853;
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../files/HelveticaNeueCyr-Italic.eot');
+	src: local('HelveticaNeueCyr-Italic'),
+		url('../files/HelveticaNeueCyr-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../files/HelveticaNeueCyr-Italic.woff') format('woff'),
+		url('../files/HelveticaNeueCyr-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
 }
 
-#add_doc_button{
-    right:11%;
-    width:13%;
-    color:#FFFFFF;
-    background: #F7C44F!important;
-    border-color:#F7C44F!important;
-    z-index:-10;
-}
-/*a little feature you can delete*/
-button:active {
-    transform: translateY(4px);
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../files/HelveticaNeueCyr-Roman.eot');
+	src: local('HelveticaNeueCyr-Roman'),
+		url('../files/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+		url('../files/HelveticaNeueCyr-Roman.woff') format('woff'),
+		url('../files/HelveticaNeueCyr-Roman.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
-header h4 img,button{
-    height:80%;
-}
-header h4{
-    position:absolute;
-    left:1%;
-    top:10%;
-    height:100%;
-    font-size:4vh!important;
-    color:#FFFFFF;
-}
-#content{
-    background: #dfe8e9;
-    height:88vh;
-    overflow: auto;
-    position:relative;
-}
-#main_info{
-    position:absolute;
-    top:4%;
-    left:6%;
-    width:43%;
-    height:35%;
-
-    background: #3F937E;
-    border-radius: 20px;
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../files/HelveticaNeueCyr-Light.eot');
+	src: local('HelveticaNeueCyr-Light'),
+		url('../files/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+		url('../files/HelveticaNeueCyr-Light.woff') format('woff'),
+		url('../files/HelveticaNeueCyr-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
 }
 
-#main_info img {
-    position: absolute;
-    height:80%;
-    top:10%;
-    left:5%;
-}
-#main_info p{
-    position:absolute;
-    top:9%;
-    left:43%;
-    right:5%;
-    font-size:5vh;
-    color:#FFFFFF;
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../files/HelveticaNeueCyr-LightItalic.eot');
+	src: local('HelveticaNeueCyr-LightItalic'),
+		url('../files/HelveticaNeueCyr-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('../files/HelveticaNeueCyr-LightItalic.woff') format('woff'),
+		url('../files/HelveticaNeueCyr-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
 }
 
-#get_started{
-    position:absolute;
-    top:4%;
-    right:6%;
-    width:43%;
-    height:35%;
-    background: #3F937E;
-    border-radius: 20px;
-}
-#get_started h4{
-
-    margin-top:1%;
-    font-size:8vh!important;
-    color:#FFFFFF;
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../files/HelveticaNeueCyr-Bold.eot');
+	src: local('HelveticaNeueCyr-Bold'),
+		url('../files/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../files/HelveticaNeueCyr-Bold.woff') format('woff'),
+		url('../files/HelveticaNeueCyr-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
 }
 
-#get_started button{
-    color:#FFFFFF;
-    background: #F7C44F!important;
-    border-color:#F7C44F!important;
-    margin-top:3%;
-    height:25%;
-}
-#log_in_button{
-    position:absolute;
-    right:20%;
-    width:27%;
-    bottom:17%;
-}
-#register_button{
-    position:absolute;
-    left:20%;
-    width:27%;
-    bottom:17%;
+*{
+  font-family: 'HelveticaNeueCyr', sans-serif;
 }
 
-#simple_instructions{
-    position:absolute;
-    top:42%;
-    left:6%;
-    width:88%;
-    height:54%;
-}
-#simple_instructions img{
-    position:absolute;
-    height:70%;
-    top:0;
-    border-radius: 20px;
-}
-#simple_instructions p{
-    color:#FFFFFF;
-    font-size: 5vh;
-    text-align:center;
-}
-#simple_instructions div{
-    position:absolute;
-    background:#285853;
-
-    height:7vh;
-    border-radius: 13px;
-    bottom:7%;
+nav.navbar-green, footer {
+  background:#285853;
 }
 
-#arrow1{
-    left:30%!important;
-    height:30%!important;
-    top:23%!important;
- }
-
-#arrow2{
-    left:60%!important;
-    height:30%!important;
-    top:23%!important;
-}
-#instruction_1{
-    width:26%;
-    left:4%;
+footer {
+  height: 50px;
 }
 
-
-#instruction_2{
-    width:26%;
-    left:34%;
+header button {
+  font-size:1.4vw!important;
+  padding:0!important;
+  overflow: hidden;
 }
 
-#instruction_3{
-
-    width:30%;
-    right:4%;
-}
-#image_1{
-     left:10%;
- }
-#image_2{
-
-    left:40%;
-}
-#image_3{
-
-  right:12%;
+img.landing-image {
+ width: 50%;
+ height: auto;
 }
 
-#footer{
-    position:absolute;
-    background:#285853;
-    width:100%;
-    height:12vh;
-   top:99%;
-    overflow: hidden;
+div.landing-block {
+	
 }
 
-#faq_footer_link{
-
-    position:absolute;
-    left:1%;
-    top:40%;
-    height:85%;
-    color:#FFFFFF;
-    width:20vw;
-    font-size:5vh!important;
+#log_out_button:hover {
+  color:#285853;
 }
 
-#faq_footer_link:hover{
-    text-decoration:none!important;
-    color:#F7C44F!important;
+#add_doc_button {
+  color:#FFFFFF;
+  background: #F7C44F!important;
+  border-color:#F7C44F!important;
+}
+
+img.logo {
+  height: 10vh;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+#main_info {
+  background: #3F937E;
+}
+
+#get_started {
+  background: #3F937E;
+  margin: 10%;
+  height:80%;
 }
