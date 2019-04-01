@@ -1,10 +1,12 @@
 
 @media (min-width: 768px) {
   .instruction:not(:last-child):after {
-    content: url('../images/arrow.png');
-    transform: scale(0.3);
-    position:absolute;
-    display: block;
-    right: -150px;
+    content: "⇨";
+    position: absolute;
     top: 0;
+    display: block;
+    font-size: 10vw;
+    right: -12%;
+color:#285853;
   }
+}

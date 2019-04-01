@@ -72,8 +72,12 @@ nav.navbar-green, footer {
   background:#285853;
 }
 
-footer {
-  height: 50px;
+header,footer {
+  height: 12vh!important;
+}
+
+div.container {
+	min-height: 76vh;
 }
 
 header button {
@@ -87,19 +91,24 @@ img.landing-image {
  height: auto;
 }
 
-div.landing-block {
-	
+button:active {
+	transform: translateY(4px);
 }
-
+#log_out_button{
+	margin-left:40px;
+	margin-right:40px;
+}
 #log_out_button:hover {
   color:#285853;
 }
 
 #add_doc_button {
+	margin-right:40px;
   color:#FFFFFF;
   background: #F7C44F!important;
   border-color:#F7C44F!important;
 }
+
 
 img.logo {
   height: 10vh;
@@ -112,12 +121,63 @@ img.logo {
   color: white;
 }
 
-#main_info {
-  background: #3F937E;
+
+.upper_blocks_container{
+	margin-top:3%;
+
+	height:30vh;
+}
+
+
+
+
+#main_info{
+	background: #3F937E;
+	height:80%;
+	padding:1%;
+	border-radius:20px;
+}
+#main_info img{
+	float:left;
+	height:100%;
+	margin-right:5%;
+}
+#main_info p{
+	color:white;
+	font-size:2vw;
+	padding: 5%;
 }
 
 #get_started {
   background: #3F937E;
-  margin: 10%;
   height:80%;
+	border-radius:20px;
+	color:white;
+
+	padding:5%;
+}
+
+#get_started button{
+	color:#FFFFFF;
+	background: #F7C44F!important;
+	border-color:#F7C44F!important;
+}
+
+#register_button{
+	margin-top:5%;
+	width:30%;
+	float:left;
+
+	margin-left:20%;
+}
+
+#log_in_button{
+
+	margin-top:5%;
+	width:20%;
+	float:right;
+	margin-right:20%;
+}
+#simple_instructions{
+	margin-top:5%;
 }
