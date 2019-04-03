@@ -1,0 +1,56 @@
+
+body{
+    background: #E5E5E5!important;
+}
+
+
+a:hover{
+    text-decoration: none;
+}
+header{
+    background: #3F937E;
+    height:6em;
+    text-align: center;
+    padding: 1em;
+}
+header p{
+    font-size: 2em;
+    color:white;
+}
+
+#table{
+    margin:4% 15% 2% 15%;
+    width:70%;
+    background: white;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+#blank{
+    width:100%;
+    padding: 3% 10%;
+}
+
+#blank p,input{
+    margin-top:3%;
+    width:100%;
+}
+
+#blank a{
+    color:white;
+    width:46%;
+    padding:3% 2%;
+    margin-top:3%;
+    background: #F7C44F;
+    min-width:10em;
+}
+
+@media (max-width: 760px){
+    header p{
+        font-size:30px;
+    }
+
+    #table{
+        margin:0;
+        width:100%;
+    }
+}
