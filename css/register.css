@@ -1,0 +1,115 @@
+
+body{
+    background-color: #E5E5E5!important;
+     background-image: url(../images/bg.jpg)!important;
+    background-repeat: no-repeat;
+    background-size: cover!important;
+    padding:4% 17% 2% 17%;
+    margin:0;
+}
+
+
+a:hover{
+    text-decoration: none;
+}
+header{
+    background: #3F937E;
+    height:6em;
+    text-align: center;
+    padding: 1em;
+}
+header p{
+    font-size: 2em;
+    color:white;
+}
+
+input:focus,textarea:focus ,select:focus{
+    box-shadow: 0 0 5px rgb(247, 196, 79)!important;
+
+    border: 1px solid rgb(247, 196, 79)!important;
+}
+
+
+#table{
+    margin:0;
+    width:100%;
+    background: white;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+#checking_fail_message{
+    text-align:center;
+    padding:3% 1%;
+    color:darkred;
+    font-weight:bold;
+    border: 1px solid darkred;
+    border-radius:7px;
+    box-shadow: 0 0 5px darkred;
+   display: none;
+}
+
+#blank{
+    width:100%;
+    padding: 3% 10%;
+}
+
+#blank p,input{
+    margin-top:3%;
+    width:100%;
+}
+
+#blank a,button{
+    color:white!important;
+    width:48%;
+    padding:3% 2%!important;
+    margin-top:3%!important;
+    background: #F7C44F;
+    min-width:10em;
+}
+
+#imgp{
+    padding:0;
+    margin:0;
+}
+
+#imgp img{
+    padding:3%;
+    width:94%;
+}
+
+@media (max-width: 760px){
+    header p{
+        font-size:30px;
+    }
+
+    body{
+        padding:4%;
+    }
+    #table{
+        margin:0;
+        width:100%;
+    }
+    #blank a,button{
+         width:96%;
+    }
+}
+
+.bouncy{
+    -webkit-animation:bouncy 5s infinite linear;
+    -moz-animation:bouncy 5s infinite linear;
+    -o-animation:bouncy 5s infinite linear;
+    animation:bouncy 5s infinite linear;
+    position:relative;
+    background: transparent;
+}
+
+@keyframes bouncy {
+    0% {top: 0;}
+    40% {top: 0;}
+    43% {top: -0.9em;}
+    46% {top: 0;}
+    48% {top: -0.4em;}
+    50% {top: 0;}
+    100% {top: 0;}
+}
+

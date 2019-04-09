@@ -1,0 +1,126 @@
+body{
+    background: #E5E5E5!important;
+}
+header, footer {
+    position:relative;
+    width: 100%;
+    height: 55px;
+    color: #FFFFFF;
+    background-color: #285853;
+    line-height: 55px;
+}
+header a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.to-right {
+    float: right;
+}
+.logo {
+    position: absolute;
+    padding: 5px;
+    margin: 0 5px;
+    height: 100%;
+    box-sizing: border-box;
+    z-index:5;
+}
+
+.omni {
+    position: absolute;
+    left:5%;
+    top: 25%;
+    font-weight: 300;
+    font-size:24px;
+}
+
+footer {
+    width:100%;
+    margin:0;
+    padding:0;
+    bottom:0;
+}
+
+.to-right a{
+    color:white!important;
+}
+.to-right a:hover{
+    background: #285853;
+}
+
+#content{
+    padding-top:5vh;
+    padding-left: 1%;
+    min-height:calc(100vh - 111px);
+    overflow: auto;
+}
+
+.threads{
+    float:left;
+    width:31%;
+    margin:1%;
+    min-height:15vh;
+
+
+}
+.question_board{
+    background: white;
+    border-radius:5px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+    padding:10px;
+    margin: 20px 0;
+
+}
+.question_style{
+    text-align: center;
+   font-weight:bold;
+}
+
+#content button{
+    background: #F7C44F!important;
+    color:white!important;
+}
+#content textarea{
+    width:100%;
+}
+
+input:focus,textarea:focus ,select:focus{
+    box-shadow: 0 0 5px rgb(247, 196, 79)!important;
+
+    border: 1px solid rgb(247, 196, 79)!important;
+}
+textarea{
+    margin-bottom:5px!important;
+}
+
+@media (max-width: 875px) {
+
+
+    .threads{
+        width:44%;
+        margin:2%;
+
+    }
+}
+@media (max-width: 760px) {
+
+    header a{
+        font-size:14px!important;
+    }
+    .omni {
+        left:14%;
+        top:33%;
+        font-size:18px;
+    }
+
+
+}
+
+@media (max-width: 620px) {
+    .threads{
+        width:90%;
+        margin-right:5%;
+margin-left:5%;
+        float:none;
+    }
+}
