@@ -12,7 +12,7 @@ function fill_questions(){
     for(let i=0;i<questions.length;i++){
 
         if(i==0)
-            $("#thread_1").append("<div class='question_board'><p class='question_style'>"+questions[i]+"</p><hr><textarea rows='3' name='client_question'></textarea><button class='btn btn-warning'>Відправити повідомлення</button></div>");
+            $("#thread_1").append("<div class='question_board'><p class='question_style'>"+questions[i]+"</p><hr><textarea class='form-control' rows='3' name='client_question'></textarea><button class='btn btn-warning'>Відправити повідомлення</button></div>");
         if(i%3===0&&i!=0){
             $("#thread_1").append("<div class='question_board'><p class='question_style'>"+questions[i]+"</p><hr><p class='answer_style'>"+answers[i]+"</p></div>");
         }
@@ -26,3 +26,4 @@ function fill_questions(){
     }
 }
 fill_questions();
+
