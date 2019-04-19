@@ -1,0 +1,28 @@
+#content{
+    margin:0 20%;
+}
+
+#content img{
+    width:100%;
+}
+
+.buttons{
+    float:left;
+    width:20%;
+    color:white!important;
+    background: #F7C44F!important;
+    font-size:18px;
+    padding:9% 10px;
+    margin: 3px 0!important;
+}
+@media (max-width: 760px){
+    #content{
+
+        margin:5vh 10%;
+
+    }
+    .buttons {
+        padding:15px 10px;
+        width: 100%;
+    }
+}
