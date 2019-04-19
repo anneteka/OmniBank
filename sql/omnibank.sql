@@ -16,6 +16,34 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `login` varchar(10) NOT NULL,
+  `email` varchar(20) DEFAULT NULL,
+  `password` varchar(20) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `middle_name` varchar(20) DEFAULT NULL,
+  `surname` varchar(20) NOT NULL,
+  `birth` date NOT NULL,
+  `sex` int(11) NOT NULL,
+  `country` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `login` (`login`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user`
+--
+
+--
 -- Table structure for table `passport`
 --
 
@@ -48,33 +76,7 @@ LOCK TABLES `passport` WRITE;
 /*!40000 ALTER TABLE `passport` ENABLE KEYS */;
 UNLOCK TABLES;
 
---
--- Table structure for table `user`
---
 
-DROP TABLE IF EXISTS `user`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `user` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `login` varchar(10) NOT NULL,
-  `email` varchar(20) DEFAULT NULL,
-  `password` varchar(20) NOT NULL,
-  `name` varchar(20) NOT NULL,
-  `middle_name` varchar(20) DEFAULT NULL,
-  `surname` varchar(20) NOT NULL,
-  `birth` date NOT NULL,
-  `sex` int(11) NOT NULL,
-  `country` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `login` (`login`),
-  UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `user`
---
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
