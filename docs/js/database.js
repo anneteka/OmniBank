@@ -23,7 +23,7 @@ function addUser(loginQ, eamilQ, passwordQ, nameQ, middleNameQ, surnameQ, birthQ
     var sql = "INSERT INTO user (login, email, password, name, middle_name, surname, birth,sex,country) VALUES ("
         + "\'" + loginQ + "\', \'" + passwordQ + "\', \'"
         + nameQ + "\', \'" + surnameQ + "\',\'"
-        + birthQ + "\',\'" + home_cityQ + "\'," + sexQ + ")";
+        + birthQ + "\',\'" + sexQ + "\',\'" + countryQ + ")\'";
     con.query(sql, function (err, result) {
         if (err) throw err;
         console.log("1 record inserted");
