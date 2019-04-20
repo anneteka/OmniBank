@@ -34,7 +34,7 @@ function addUser(loginQ, eamilQ, passwordQ, nameQ, middleNameQ, surnameQ, birthQ
 function getUserID(login) {
     con.query("SELECT id FROM user WHERE login = " + "\'" + login + "\'", function (err, result) {
         if (err) throw err;
-        console.log(result);
+        console.log(result[0].id);
         return result;
     });
 }
@@ -68,7 +68,10 @@ function getUserLogin(loginQ, passwordQ) {
     });
 }
 
-function addPic(loginQ, pathQ, roleQ, name){
-
+function addPic(loginQ, pathQ, typeQ, nameQ){
+    let idQ = getUserID(loginQ);
+    let sql = "INSERT INTO docpics (userid, path, type, name) VALUES ("
+        + "\'" + idQ + "\', \'" + pathQ + "\', \'" + typeQ + "\', \'"
+        + nameQ + "\')";
 }
 console.log(getUserLogin('heyy', 'me'));
