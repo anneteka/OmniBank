@@ -1,0 +1,30 @@
+{
+  "name": "omnibank",
+  "version": "1.0.0",
+  "description": "omnibank proj",
+  "main": "index.js",
+  "dependencies": {
+    "tesseract.js": "^1.0.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anneteka/OmniBank.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anneteka/OmniBank/issues"
+  },
+  "homepage": "https://github.com/anneteka/OmniBank#readme"
+}
