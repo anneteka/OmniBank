@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(white 0%, rgb(255,223,226)65%,#ff4a5a 100%)!important;
+    background-image: linear-gradient(white 0%, rgb(255,223,226)45%,#ff4a5a 100%)!important;
 }
 
 .wrapper{
@@ -27,7 +27,7 @@ header a {
 
 .logo {
     float: left;
-    padding: 10px;
+    padding: 2px;
     height: 100%;
     box-sizing: border-box;
 }
@@ -59,7 +59,7 @@ header a {
     float: left;
     line-height: 60px;
     font-weight: 300;
-    font-size:14pt;
+    font-size:18pt;
     margin: 0;
     padding: 0 5px;
 }
