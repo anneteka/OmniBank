@@ -1,11 +1,8 @@
-
 body{
     background-image: linear-gradient(to right,#ff4a5a 0%, rgb(255,223,226)35%,white 50%,rgb(255,223,226)65%,#ff4a5a 100%)!important;
-
     margin:0;
     min-height: 100vh;
 }
-
 
 .head_p{
     background-color: #2e3038;
@@ -14,12 +11,12 @@ body{
     padding: 18px 15px 15px 15px;
     font-size: 25px;
     color:#00f4d9;
-
 }
+
 .done_button{
 background: #00f4d9!important;
-
 }
+
 #check_button{
     background: #ff4a5a!important;
 }
@@ -35,8 +32,8 @@ input:focus,textarea:focus ,select:focus{
     background-size: 40%!important;
     overflow: auto;
 }
-#table{
 
+#table{
     overflow: hidden;
     margin: 5% 25% 2% 25%;
     width:50%;
@@ -97,7 +94,7 @@ a:hover{
         font-size:30px;
     }
 
-    body{
+    #content{
         padding:4%;
     }
     #table{

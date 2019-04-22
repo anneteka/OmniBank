@@ -27,11 +27,15 @@ header a {
 
 .logo {
     float: left;
-    padding: 5px;
-    margin: 0 5px;
+    padding: 10px;
     height: 100%;
     box-sizing: border-box;
-    z-index:5;
+}
+
+.user {
+    padding: 10px;
+    height: 60px;
+    box-sizing: border-box;
 }
 
 .logo:hover{
@@ -49,14 +53,13 @@ header a {
     75% { -webkit-transform: rotate(180deg);}
     90% { -webkit-transform: rotate(360deg); }
     100% { -webkit-transform: rotate(360deg); }
-
 }
 
 .omni {
     float: left;
     line-height: 60px;
     font-weight: 300;
-    font-size:20pt;
+    font-size:14pt;
     margin: 0;
     padding: 0 5px;
 }
@@ -89,10 +92,6 @@ footer a{
     transition: 500ms;
 }
 
-.to-right a:hover{
-    background: #285853;
-}
-
 .btn-danger{
     background-color: #ff4a5a!important;
     color:white!important;
@@ -103,7 +102,6 @@ footer a{
     transition: transform 600ms;
     transform: scale(1.1);
 }
-
 
 .btn-outline-danger:hover{
     background-color: #ff4a5a!important;
@@ -127,4 +125,6 @@ footer a{
 
 .btn-info:hover{
     border-color: #00D6BD!important;
+    transition: transform 600ms;
+    transform: scale(1.1);
 }
