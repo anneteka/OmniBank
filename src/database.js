@@ -61,7 +61,7 @@ function getUserLogin(loginQ, passwordQ) {
             return "no_login";
         console.log(result[0].login, result[0].password);
         if (result[0].password!=passwordQ)
-            return "false"
+            return "false";
         return "true";
 
 
@@ -76,4 +76,4 @@ function addPic(loginQ, pathQ, typeQ, nameQ){
 }
 console.log(getUserLogin('heyy', 'me'));
 
-module.exports = [addPic,addUser,addPassport]
+module.exports = [addPic,addUser,addPassport];
