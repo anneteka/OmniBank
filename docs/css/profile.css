@@ -1,64 +1,3 @@
-header, footer {
-    position:relative;
-    width: 100%;
-    height: 55px;
-    color: #00f4d9;
-    background-color: #2e3038;
-    line-height: 55px;
-}
-
-header a {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.to-right {
-    float: right;
-}
-
-.omni {
-    position: absolute;
-    left:5%;
-    top: 25%;
-    font-weight: 300;
-    font-size:24px;
-}
-
-footer {
-    width:100%;
-    margin:0;
-    padding:0;
-    bottom:0;
-}
-
-.to-right a:hover{
-    background: #285853;
-}
-
-.btn-danger{
-    background-color: #ff4a5a!important;
-}
-
-.btn-outline-light{
-    color:#00f4d9!important;
-    border-color: #00f4d9!important;
-}
-.btn-outline-light:hover{
-    color: white!important;
-    background-color: #00f4d9!important;
-}
-
-.btn-outline-danger:hover{
-    background-color: #ff4a5a!important;
-}
-
-#content{
-    background-color: #b2c6cd;
-    text-align: center;
-    min-height:calc(100vh - 111px);
-    overflow: auto;
-}
-
 .profile-card{
     display: inline-block;
     margin: 20px 0;
@@ -90,8 +29,16 @@ footer {
     text-align: left;
 }
 
+p{
+    margin: 10px 0!important;
+}
+
 .buttons{
     clear: both;
+}
+
+.buttons .btn{
+    margin: 5px 0;
 }
 
 .user-name{
@@ -99,7 +46,7 @@ footer {
     font-size: 16pt;
 }
 
-@media (max-width: 760px){
+@media (max-width: 768px){
 
     .frame{
         display: block;
