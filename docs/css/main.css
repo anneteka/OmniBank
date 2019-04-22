@@ -22,23 +22,23 @@ header a {
 	height: 100%;
 	box-sizing: border-box;
 	z-index:5;
-	transition: rotate 1000ms;
+	transition: 2200ms;
 }
 .logo:hover{
-	-webkit-animation-name: round;
-	-webkit-animation-duration: 1000ms;
-	transition-delay: 500ms;
-	-webkit-animation-iteration-count: infinite;
+	-webkit-animation: round 1500ms infinite;
+	-webkit-animation-duration: 1200ms;
+	-webkit-animation-delay: 500ms;
 	-webkit-animation-timing-function: linear;
-	transition: rotate 1000ms;
+	transition: rotate 2200ms;
 }
 @-webkit-keyframes round {
-	0% { -webkit-transform: rotate(-20deg);}
+	0% { -webkit-transform: rotate(0deg);}
 	25%{ -webkit-transform: rotate(-25deg);}
 	50% { -webkit-transform:  rotate(0);}
 	75% { -webkit-transform: rotate(180deg);}
-	99% { -webkit-transform: rotate(360deg); }
-	100% { -webkit-transform: rotate(0deg); }
+	90% { -webkit-transform: rotate(360deg); }
+	100% { -webkit-transform: rotate(360deg); }
+
 }
 .omni {
 	position: absolute;

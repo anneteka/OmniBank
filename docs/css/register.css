@@ -1,71 +1,86 @@
 
 body{
-    background-color: #E5E5E5!important;
-     background-image: url(../images/bg.jpg)!important;
-    background-repeat: no-repeat;
-    background-size: cover!important;
-    padding:4% 17% 2% 17%;
+    background-image: linear-gradient(to right,#ff4a5a 0%, rgb(255,223,226)35%,white 50%,rgb(255,223,226)65%,#ff4a5a 100%)!important;
+
     margin:0;
+    min-height: 100vh;
 }
 
 
-a:hover{
-    text-decoration: none;
-}
-header{
-    background: #3F937E;
-    height:6em;
+.head_p{
+    background-color: #2e3038;
+    height:3em;
     text-align: center;
-    padding: 1em;
-}
-header p{
-    font-size: 2em;
-    color:white;
-}
+    padding: 18px 15px 15px 15px;
+    font-size: 25px;
+    color:#00f4d9;
 
+}
+.done_button{
+background: #00f4d9!important;
+
+}
+#check_button{
+    background: #ff4a5a!important;
+}
 input:focus,textarea:focus ,select:focus{
-    box-shadow: 0 0 5px rgb(247, 196, 79)!important;
-
-    border: 1px solid rgb(247, 196, 79)!important;
+    box-shadow: 0 0 5px #00f4d9!important;
+    border: 1px solid #00f4d9!important;
 }
 
-
-#table{
-    margin:0;
+#content{
     width:100%;
-    background: white;
-    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+    min-height:100vh;
+    background: url("../images/mazefulltrans.png") !important;
+    background-size: 40%!important;
+    overflow: auto;
+}
+#table{
+
+    overflow: hidden;
+    margin: 5% 25% 2% 25%;
+    width:50%;
+    border-radius: 15px;
+    background:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 #checking_fail_message{
     text-align:center;
     padding:3% 1%;
-    color:darkred;
+    color:#ff4a5a;
     font-weight:bold;
-    border: 1px solid darkred;
+    border: 1px solid #ff4a5a;
     border-radius:7px;
-    box-shadow: 0 0 5px darkred;
+    box-shadow: 0 0 5px #ff4a5a;
    display: none;
 }
 
 #blank{
     width:100%;
-    padding: 3% 10%;
+    padding: 2% 10%;
 }
 
 #blank p,input{
-    margin-top:3%;
+    margin-top:2%;
     width:100%;
 }
 
 #blank a,button{
     color:white!important;
-    width:48%;
-    padding:3% 2%!important;
-    margin-top:3%!important;
-    background: #F7C44F;
+    width:44%;
+    padding:2% 3%!important;
+    margin:2% 3% 0 2% !important;
     min-width:10em;
+    font-size: 20px;
+    transition: transform 600ms;
 }
+a:hover{
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: transform 600ms;
+}
+
 
 #imgp{
     padding:0;

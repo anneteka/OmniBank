@@ -12,12 +12,11 @@
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 </head>
-<body style=" background-image: url(images/bg.jpg)!important;">
-
+<body >
+<div id="content">
 <div id="table">
-    <header>
-        <p> Новий документ</p>
-    </header>
+
+        <p class="head_p"> Новий документ</p>
     <div id="blank">
         <p id="checking_fail_message">
         </p>
@@ -41,14 +40,14 @@
         <p>Пароль:</p>
         <input type="password" class="form-control"/>
 
-        <button class="btn btn-warning bouncy" id="check_button" style=" width:96%;   background: #F7C44F;">Check it!
+        <button class="btn btn-danger bouncy" id="check_button" style=" width:96%;  ">Спочатку перевір!
         </button>
         <a class="btn btn-light" style="background: #8c8c8c" href="cabinet.html">Назад</a>
-        <a class="btn btn-success" id="done_button" style="background:#285853" href="cabinet.html"> Готово!</a>
+        <a class="btn btn-light done_button"  style="background:#285853" href="cabinet.html"> Готово!</a>
     </div>
 </div>
 
-
+</div>
 <!--bootstrap-->
 <script type ="module" src="js/main.js"></script>
 </body>
