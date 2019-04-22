@@ -1,4 +1,6 @@
 import Tesseract from 'tesseract.js';
+import {addPic,addUser,addPassport} from 'database.js'
+
 
 var img = document.createElement("img");
 
@@ -14,7 +16,7 @@ $("#imgInp").change(function(e) {
                 console.log(reader);
                 addImg(reader.result);
             }
-        }
+        };
         reader.readAsDataURL(file);
         $("#imgp").append(img);
     }
@@ -25,13 +27,18 @@ let unsorted=["../images/icon.png"];
 function addImg(filesrc){
     unsorted.push(filesrc);
     //console.log(filesrc);
-
     Tesseract.recognize(myImage,{lang:'eng'})
         .then(function(result){
             console.log(result)
-        })
+        });
 }
-
+// $(document).on('click', '#done_button', function () {
+//     let login = sessionStorage.getItem('login');
+//     let nameOfPic= $('.name').value;
+//     let
+//     addPic(login);
+// });
 const check_failure_reasons=[
     'Не завантажено зображення!','Некоректне зображення! Спробуйте ще раз!','Неправильний пароль!'
 ];
+

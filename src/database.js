@@ -75,3 +75,5 @@ function addPic(loginQ, pathQ, typeQ, nameQ){
         + nameQ + "\')";
 }
 console.log(getUserLogin('heyy', 'me'));
+
+module.exports = [addPic,addUser,addPassport]
