@@ -74,7 +74,8 @@ footer {
     font-size: 2vw;
 }
 .cards img{
-    width:90%;
+    width:70%;
+    margin-top:7%;
 }
 #content{
     background: url("../images/mazefulltrans.png") !important;
@@ -210,8 +211,8 @@ footer a:hover, footer a:focus{
 
 
     .cards{
-        width:45%;
-        height:280px;
+        width:40%;
+        height:240px;
 
     }
 
@@ -220,43 +221,42 @@ footer a:hover, footer a:focus{
         font-size: 5vw;
     }
     .cards img{
-        width:90%;
+        width:60%!important;
+        margin-top:0!important;
     }
 
 
     #identity{
         left:8%;
-        top:5%;
+        top:8%;
         transform: rotate(-11deg);
         background:white;
     }
 
     #certificate{
-        left:20%;
-        top:26%;
+        left:30%;
+        top:45%;
+        z-index: 1001;
         transform: rotate(-5deg);
-        /*  background: #00f4d9;*/
 
     }
     #bank_cards{
         left:42%;
-        top:9%;
+        top:3%;
         transform: rotate(8deg);
-        /*  background: #ff4a5a;*/
     }
     #tickets{
         background: white;
         transform: rotate(-11deg);
-        top:29%;
-        left:55%;
+        top:32%;
+        left:10%;
 
     }
 
     #other{
-        left:71%;
-        top:13%;
+        left:48%;
+        top:22%;
         transform: rotate(6deg);
-        /*  background: #00f4d9;*/
     }
 
 
