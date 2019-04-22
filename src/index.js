@@ -1,6 +1,9 @@
-import Tesseract from 'tesseract.js';
-import {addPic,addUser,addPassport} from 'database.js'
+import tesseract from "tesseract.js";
+//import {addPic,addUser,addPassport} from 'database'
+import $ from 'jquery';
 
+window.jQuery = $;
+window.$ = $;
 
 var img = document.createElement("img");
 
@@ -26,8 +29,8 @@ let unsorted=["../images/icon.png"];
 //add url of img to array/database
 function addImg(filesrc){
     unsorted.push(filesrc);
-    //console.log(filesrc);
-    Tesseract.recognize(myImage,{lang:'eng'})
+    console.log(filesrc);
+    tesseract.recognize(filesrc,{lang:'eng'})
         .then(function(result){
             console.log(result)
         });

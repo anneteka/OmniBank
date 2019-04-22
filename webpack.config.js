@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-    target: 'node',
+    target: 'web',
     entry: {
         main: './src/index.js',
-        db: './src/database.js'
+        //db: './src/database.js'
     },
 
     output: {
