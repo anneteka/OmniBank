@@ -1,6 +1,7 @@
 
 body{
-    background: #f2f2f2!important;
+    background-image: linear-gradient(white 0%, rgb(255,223,226)65%,#ff4a5a 100%)!important;
+
 
 }
 header, footer {
@@ -45,10 +46,13 @@ footer {
 }
 
 .to-right a{
-    color:white!important;
+    color:#00f4d9!important;
+    border-color: #00f4d9!important;
+
 }
 .to-right a:hover{
-    background: #285853;
+    background: #00f4d9!important;
+    color:white!important;
 }
 
 .cards{
@@ -73,6 +77,9 @@ footer {
     width:90%;
 }
 #content{
+    background: url("../images/mazefulltrans.png") !important;
+    background-size: 40%!important;
+
     min-height:100vh;
     margin:0;
     position: relative;
@@ -80,37 +87,33 @@ footer {
 
 #identity{
     left:5%;
-    top:12%;
+    top:16%;
     transform: rotate(-11deg);
    background:white;
 }
 
 #certificate{
     left:20%;
-    top:22%;
+    top:26%;
     transform: rotate(-5deg);
-  /*  background: #00f4d9;*/
-
 }
 #bank_cards{
     left:42%;
-    top:5%;
+    top:9%;
     transform: rotate(8deg);
-  /*  background: #ff4a5a;*/
 }
 #tickets{
     background: white;
     transform: rotate(-11deg);
-    top:25%;
-    left:54%;
+    top:29%;
+    left:55%;
 
 }
 
 #other{
     left:71%;
-    top:9%;
+    top:13%;
     transform: rotate(6deg);
- /*  background: #00f4d9;*/
 }
 
 #identity:hover,#identity:focus,#tickets:hover,#tickets:focus{
@@ -176,20 +179,22 @@ footer {
     100% { -webkit-transform: rotate(6deg); }
 }
 
-
-
 a,button:active {
     transform: translateY(1px);
 }
-
 footer a{
+    font-size: 22px;
     float:left;
-    padding-left: 1vw;
-   color: white;
+    padding: 1% 3%!important;
+    margin-left: 5% !important;
+   color:#00f4d9!important;
+    border-color: #00f4d9!important;
+
 }
-footer a:hover{
+footer a:hover, footer a:focus{
     text-decoration: none;
-     color:#00f4d9;
+    background:  #00f4d9 !important;
+    color: white!important;
 }
 
 @media (max-width: 760px) {
@@ -201,6 +206,57 @@ footer a:hover{
         left:14%;
         top:33%;
         font-size:18px;
+    }
+
+
+    .cards{
+        width:45%;
+        height:280px;
+
+    }
+
+    .cards p{
+        text-align: center;
+        font-size: 5vw;
+    }
+    .cards img{
+        width:90%;
+    }
+
+
+    #identity{
+        left:8%;
+        top:5%;
+        transform: rotate(-11deg);
+        background:white;
+    }
+
+    #certificate{
+        left:20%;
+        top:26%;
+        transform: rotate(-5deg);
+        /*  background: #00f4d9;*/
+
+    }
+    #bank_cards{
+        left:42%;
+        top:9%;
+        transform: rotate(8deg);
+        /*  background: #ff4a5a;*/
+    }
+    #tickets{
+        background: white;
+        transform: rotate(-11deg);
+        top:29%;
+        left:55%;
+
+    }
+
+    #other{
+        left:71%;
+        top:13%;
+        transform: rotate(6deg);
+        /*  background: #00f4d9;*/
     }
 
 
