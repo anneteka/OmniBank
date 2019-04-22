@@ -1,90 +1,13 @@
-body{
-    background-image: linear-gradient(white 0%, rgb(255,223,226)65%,#ff4a5a 100%)!important;
-}
-header, footer {
-    position:relative;
-    width: 100%;
-    height: 60px;
-    color: #00f4d9;
-    background-color: #2e3038;
-    line-height: 55px;
-}
-header a {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-#ad_doc {
-    background: #ff4a5a!important;
-    color:white!important;
-    border-color:  #ff4a5a!important;
-    transition: transform 600ms;
-}
-#ad_doc:hover{
-    transition: transform 600ms;
-    transform: scale(1.1);
-}
-.to-right {
-    float: right;
-}
-.logo {
-    position: absolute;
-    padding: 5px;
-    margin: 0 5px;
-    height: 100%;
-    box-sizing: border-box;
-    z-index:5;
-    transition: 2200ms;
-}
-.logo:hover{
-    -webkit-animation: round 1500ms infinite;
-    -webkit-animation-duration: 1200ms;
-    -webkit-animation-delay: 500ms;
-    -webkit-animation-timing-function: linear;
-    transition: rotate 2200ms;
-}
-@-webkit-keyframes round {
-    0% { -webkit-transform: rotate(0deg);}
-    25%{ -webkit-transform: rotate(-25deg);}
-    50% { -webkit-transform:  rotate(0);}
-    75% { -webkit-transform: rotate(180deg);}
-    90% { -webkit-transform: rotate(360deg); }
-    100% { -webkit-transform: rotate(360deg); }
-
-}
-.omni {
-    position: absolute;
-    left:5%;
-    top: 25%;
-    font-weight: 300;
-    font-size:24px;
-}
-
-footer {
-    width:100%;
-    margin:0;
-    padding:0;
-    bottom:0;
-}
-
-.to-right a,#send_mess_button{
+#send_mess_button{
     color:#00f4d9!important;
     background:#2e3038!important;
     border-color: #00f4d9!important;
 
 }
-.to-right a:hover,#send_mess_button:hover{
+
+#send_mess_button:hover{
     background: #00f4d9!important;
     color:white!important;
-}
-
-
-#content{
-    padding-top:5vh;
-    padding-left: 1%;
-    min-height:calc(100vh - 111px);
-    overflow: auto;
-    background: url("../images/mazefulltrans.png") !important;
-    background-size: 40%!important;
 }
 
 .threads{
@@ -116,19 +39,21 @@ input:focus,textarea:focus ,select:focus{
 
     border: 1px solid #00f4d9!important;
 }
+
 textarea{
     margin-bottom:5px!important;
 }
 
 @media (max-width: 875px) {
 
-
     .threads{
         width:44%;
         margin:2%;
 
     }
+
 }
+
 @media (max-width: 760px) {
 
     header a{
@@ -140,14 +65,14 @@ textarea{
         font-size:18px;
     }
 
-
 }
 
 @media (max-width: 620px) {
+
     .threads{
         width:90%;
         margin-right:5%;
-margin-left:5%;
+        margin-left:5%;
         float:none;
     }
 }
