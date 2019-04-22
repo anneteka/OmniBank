@@ -1,14 +1,14 @@
 
-
 body{
-    background: #E5E5E5!important;
+    background: #f2f2f2!important;
+
 }
 header, footer {
     position:relative;
     width: 100%;
-    height: 55px;
-    color: #FFFFFF;
-    background-color: #285853;
+    height: 60px;
+    color: #00f4d9;
+    background-color: #2e3038;
     line-height: 55px;
 }
 header a {
@@ -41,6 +41,7 @@ footer {
     margin:0;
     padding:0;
     bottom:0;
+    position: absolute;
 }
 
 .to-right a{
@@ -49,50 +50,146 @@ footer {
 .to-right a:hover{
     background: #285853;
 }
-.board_title{
-    width:100%;
-    padding:7px 10%;
+
+.cards{
+    width:17%;
+    margin: 0 0.5%;
+    height:280px;
+    border-radius: 15px;
+    position: absolute;
+    transition: transform 500ms;
+    background:white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
-.board-body{
-    width:98%;
-    margin:0 1%;
-    background:white!important;
-    min-height:3vh!important;
-    border-radius:2px;
+.cards:hover, .cards:active, .cards:focus{
+   transform: translateY(-15px);
 }
-.board-body span{
-    float:left;
-    margin:5px;
+
+.cards p{
+    text-align: center;
+    font-size: 2vw;
 }
+.cards img{
+    width:90%;
+}
+#content{
+    min-height:100vh;
+    margin:0;
+    position: relative;
+}
+
+#identity{
+    left:5%;
+    top:12%;
+    transform: rotate(-11deg);
+   background:white;
+}
+
+#certificate{
+    left:20%;
+    top:22%;
+    transform: rotate(-5deg);
+  /*  background: #00f4d9;*/
+
+}
+#bank_cards{
+    left:42%;
+    top:5%;
+    transform: rotate(8deg);
+  /*  background: #ff4a5a;*/
+}
+#tickets{
+    background: white;
+    transform: rotate(-11deg);
+    top:25%;
+    left:54%;
+
+}
+
+#other{
+    left:71%;
+    top:9%;
+    transform: rotate(6deg);
+ /*  background: #00f4d9;*/
+}
+
+#identity:hover,#identity:focus,#tickets:hover,#tickets:focus{
+    -webkit-animation-name: h_thumb;
+    -webkit-animation-duration: 800ms;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
+    -webkit-animation-timing-function: linear;
+    transition: transform 500ms;
+}
+@-webkit-keyframes h_thumb {
+    0% { -webkit-transform: rotate(-11deg); }
+    25%{-webkit-transform: rotate(-7deg); }
+    50% { -webkit-transform: rotate(-12deg); }
+    75% { -webkit-transform: rotate(-15deg); }
+    100% { -webkit-transform: rotate(-11deg); }
+}
+#certificate:hover,#certificate:focus{
+    -webkit-animation-name: c_thumb;
+    -webkit-animation-duration: 800ms;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
+    -webkit-animation-timing-function: linear;
+    transition: transform 500ms;
+}
+@-webkit-keyframes c_thumb {
+    0% { -webkit-transform: rotate(-5deg); }
+    25%{-webkit-transform: rotate(-9deg); }
+    50% { -webkit-transform: rotate(-4deg); }
+    75% { -webkit-transform: rotate(-1deg); }
+    100% { -webkit-transform: rotate(-5deg); }
+}
+
+#bank_cards:hover,#bank_cards:focus{
+    -webkit-animation-name: b_thumb;
+    -webkit-animation-duration: 800ms;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
+    -webkit-animation-timing-function: linear;
+    transition: transform 500ms;
+}
+@-webkit-keyframes b_thumb {
+    0% { -webkit-transform: rotate(8deg); }
+    25%{-webkit-transform: rotate(12deg); }
+    50% { -webkit-transform: rotate(7deg); }
+    75% { -webkit-transform: rotate(4deg); }
+    100% { -webkit-transform: rotate(8deg); }
+}
+
+#other:hover,#other:focus{
+    -webkit-animation-name: o_thumb;
+    -webkit-animation-duration: 800ms;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
+    -webkit-animation-timing-function: linear;
+    transition: transform 500ms;
+}
+@-webkit-keyframes o_thumb {
+    0% { -webkit-transform: rotate(6deg); }
+    25%{-webkit-transform: rotate(10deg); }
+    50% { -webkit-transform: rotate(5deg); }
+    75% { -webkit-transform: rotate(2deg); }
+    100% { -webkit-transform: rotate(6deg); }
+}
+
+
 
 a,button:active {
     transform: translateY(1px);
 }
 
-
-
-
-.board_button{
-    width:100%;
-    background:#3F937E!important;
-    color:white!important;
-    border-radius: 8px!important;
-    padding:1.5% 5%!important;
-}
-
-
-#content{
-    min-height:calc(100vh - 111px);
-}
-
 footer a{
     float:left;
     padding-left: 1vw;
-    color:white;
+   color: white;
 }
 footer a:hover{
     text-decoration: none;
-    color:#F7C44F;
+     color:#00f4d9;
 }
 
 @media (max-width: 760px) {
@@ -106,17 +203,5 @@ footer a:hover{
         font-size:18px;
     }
 
-    .board_title{
-        width:100%;
-        padding:5px 0;
 
-    }
-    .board_button{
-        padding:10px!important;
-        border-radius:5px!important;
-    }
-    .board-body {
-        width: calc(100% - 24px);
-        margin: 0 12px;
-    }
 }
