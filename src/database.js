@@ -3,11 +3,12 @@ var mysql = require('mysql');
 var con;
 
 function connect() {
-    con  = mysql.createConnection({
+    con = mysql.createConnection({
         host: "localhost",
         user: "root",
         password: "root",
-        database: "omnibank"});
+        database: "omnibank"
+    });
     try {
         con.connect(function (err) {
             if (err) throw err;
@@ -19,23 +20,25 @@ function connect() {
     }
 }
 
-function addUser(loginQ, eamilQ, passwordQ, nameQ, middleNameQ, surnameQ, birthQ, sexQ, countryQ) {
+function addUser(loginQ, emailQ, passwordQ, nameQ, middleNameQ, surnameQ, birthQ, sexQ, countryQ) {
     var sql = "INSERT INTO user (login, email, password, name, middle_name, surname, birth,sex,country) VALUES ("
         + "\'" + loginQ + "\', \'" + passwordQ + "\', \'"
         + nameQ + "\', \'" + surnameQ + "\',\'"
         + birthQ + "\',\'" + sexQ + "\',\'" + countryQ + ")\'";
     con.query(sql, function (err, result) {
         if (err) throw err;
+        result("inserted");
         console.log("1 record inserted");
     });
 //throws ER_DUP_ENTRY error if this login is already in the table
 }
 
-function getUserID(login) {
+function getUserID(login, callback) {
     con.query("SELECT id FROM user WHERE login = " + "\'" + login + "\'", function (err, result) {
         if (err) throw err;
         console.log(result[0].id);
-        return result;
+        callback(result[0].id);
+        return;
     });
 }
 
@@ -53,27 +56,46 @@ function addPassport(login, nameQ, middleNameQ, surnameQ, birthQ, sexQ, countryQ
 
 }
 
-function getUserLogin(loginQ, passwordQ) {
+
+
+function addPic(loginQ, pathQ, typeQ, nameQ) {
+   getUserID(loginQ, function(err, data){
+       con.query("INSERT INTO docpics (userid, path, type, name) VALUES ("
+           + "\'" + data + "\', \'" + pathQ + "\', \'" + typeQ + "\', \'"
+           + nameQ + "\')",
+           function (err, data) {
+           if (err) throw err;
+           console.log("pic inserted");
+       })
+   });
+}
+
+function getUserLogin(loginQ, passwordQ, callback) {
     con.query("SELECT * FROM user WHERE login = " + "\'" + loginQ + "\'", function (err, result) {
-        if (err) throw err;
-        console.log(result);
-        if (result.length==0)
-            return "no_login";
-        console.log(result[0].login, result[0].password);
-        if (result[0].password!=passwordQ)
-            return "false";
-        return "true";
-
-
+        if (err) {
+            throw err;
+        }
+        if (result.length == 0) {
+            callback("no_login");
+            return;
+        }
+        if (result[0].password != passwordQ) {
+            callback("false");
+            return;
+        }
+        callback("true");
+        return;
     });
 }
+connect();
+//example
+//data - no_login, true, false
+//no login if user is not present in the db
+//false if password is incorrect
+//true if evrth ok
+getUserLogin("hey", "me", function (data) {
+    //if (err) throw err;
+    console.log(data);
+});
 
-function addPic(loginQ, pathQ, typeQ, nameQ){
-    let idQ = getUserID(loginQ);
-    let sql = "INSERT INTO docpics (userid, path, type, name) VALUES ("
-        + "\'" + idQ + "\', \'" + pathQ + "\', \'" + typeQ + "\', \'"
-        + nameQ + "\')";
-}
-console.log(getUserLogin('heyy', 'me'));
-
-module.exports = [addPic,addUser,addPassport];
+module.exports = [addPic, addUser, addPassport];
