@@ -27,7 +27,7 @@ header a {
 
 .logo {
     float: left;
-    padding: 2px;
+    padding: 5px;
     height: 100%;
     box-sizing: border-box;
 }
@@ -59,7 +59,7 @@ header a {
     float: left;
     line-height: 60px;
     font-weight: 300;
-    font-size:18pt;
+    font-size:20pt;
     margin: 0;
     padding: 0 5px;
 }
