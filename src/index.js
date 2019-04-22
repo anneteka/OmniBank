@@ -1,12 +1,7 @@
-
-
-
-
-
-
-
+import Tesseract from 'tesseract.js';
 
 var img = document.createElement("img");
+
 $("#imgInp").change(function(e) {
     for (var i = 0; i < e.originalEvent.srcElement.files.length; i++) {
 
@@ -29,9 +24,13 @@ let unsorted=["../images/icon.png"];
 //add url of img to array/database
 function addImg(filesrc){
     unsorted.push(filesrc);
+    //console.log(filesrc);
+
+    Tesseract.recognize(myImage,{lang:'eng'})
+        .then(function(result){
+            console.log(result)
+        })
 }
-
-
 
 const check_failure_reasons=[
     'Не завантажено зображення!','Некоректне зображення! Спробуйте ще раз!','Неправильний пароль!'
