@@ -19,6 +19,8 @@
 .profile-pic{
     width: 200px;
     border-radius: 50%;
+    border: 3px solid #00f4d9;
+    padding: 5px;
 }
 
 .info{
@@ -38,7 +40,7 @@ p{
 }
 
 .buttons .btn{
-    margin: 5px 0;
+    margin: 5px;
 }
 
 .user-name{

@@ -1,3 +1,7 @@
+body{
+    background-image: linear-gradient(white 0%, rgb(255,223,226)65%,#ff4a5a 100%)!important;
+}
+
 header, footer {
     position:relative;
     width: 100%;
@@ -17,14 +21,15 @@ header a {
 
 .omni {
     position: absolute;
-    left:2%;
+    left:5%;
     top: 25%;
     font-weight: 300;
     font-size:24px;
 }
 
 #content{
-    background-color: #b2c6cd;
+    background: url("../images/mazefulltrans.png") !important;
+    background-size: 40%!important;
     text-align: center;
     min-height:calc(100vh - 111px);
     overflow: auto;
@@ -37,12 +42,21 @@ footer {
     bottom:0;
 }
 
+.btn:hover{
+    transition: 500ms;
+}
+
 .to-right a:hover{
     background: #285853;
 }
 
 .btn-danger{
     background-color: #ff4a5a!important;
+}
+
+.btn-danger:hover{
+    transition: transform 600ms;
+    transform: scale(1.1);
 }
 
 
