@@ -1,8 +1,6 @@
 
 body{
     background-image: linear-gradient(white 0%, rgb(255,223,226)65%,#ff4a5a 100%)!important;
-
-
 }
 header, footer {
     position:relative;
@@ -44,24 +42,36 @@ footer {
     bottom:0;
     position: absolute;
 }
-
+#ad_doc {
+    background: #ff4a5a!important;
+    color:white!important;
+    border-color:  #ff4a5a!important;
+    transition: transform 600ms;
+}
+#ad_doc:hover{
+    transition: transform 600ms;
+    transform: scale(1.1);
+}
 .to-right a{
     color:#00f4d9!important;
     border-color: #00f4d9!important;
+    transition: 500ms;
 
 }
 .to-right a:hover{
     background: #00f4d9!important;
     color:white!important;
+    transition: 500ms;
 }
 
 .cards{
     width:17%;
     margin: 0 0.5%;
     height:280px;
-    border-radius: 15px;
+
     position: absolute;
     transition: transform 500ms;
+    border-radius: 15px;
     background:white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
@@ -89,12 +99,12 @@ footer {
 #identity{
     left:5%;
     top:16%;
-    transform: rotate(-11deg);
+    transform: rotate(-13deg);
    background:white;
 }
 
 #certificate{
-    left:20%;
+    left:22%;
     top:26%;
     transform: rotate(-5deg);
 }
@@ -107,7 +117,7 @@ footer {
     background: white;
     transform: rotate(-11deg);
     top:29%;
-    left:55%;
+    left:56%;
 
 }
 
@@ -121,7 +131,7 @@ footer {
     -webkit-animation-name: h_thumb;
     -webkit-animation-duration: 800ms;
     -webkit-transform-origin:50% 50%;
-    -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
+    -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     transition: transform 500ms;
 }
@@ -136,7 +146,7 @@ footer {
     -webkit-animation-name: c_thumb;
     -webkit-animation-duration: 800ms;
     -webkit-transform-origin:50% 50%;
-    -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
+    -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     transition: transform 500ms;
 }
@@ -152,7 +162,7 @@ footer {
     -webkit-animation-name: b_thumb;
     -webkit-animation-duration: 800ms;
     -webkit-transform-origin:50% 50%;
-    -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
+    -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     transition: transform 500ms;
 }
@@ -168,7 +178,7 @@ footer {
     -webkit-animation-name: o_thumb;
     -webkit-animation-duration: 800ms;
     -webkit-transform-origin:50% 50%;
-    -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
+    -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     transition: transform 500ms;
 }
@@ -190,12 +200,13 @@ footer a{
     margin-left: 5% !important;
    color:#00f4d9!important;
     border-color: #00f4d9!important;
-
+    transition: 500ms;
 }
 footer a:hover, footer a:focus{
     text-decoration: none;
     background:  #00f4d9 !important;
     color: white!important;
+    transition: 500ms;
 }
 
 @media (max-width: 760px) {
