@@ -34,8 +34,8 @@ a,button:active {
 }
 
 #simple_instructions{
-	width:80%;
-	margin:0 10%;
+	width:90%;
+	margin:0 5%;
 }
 
 #simple_instructions img{
@@ -45,7 +45,11 @@ a,button:active {
 
 #simple_instructions div{
 	display: inline-block;
-	width:25%;
+
+	width:20%;
+}
+#third{
+	width:28%!important;
 }
 
 #simple_instructions p{
@@ -109,6 +113,7 @@ padding:2px 8px;
 		width:80%;
 		margin: 20px 10%;
 	}
+
 
 	.arrow{
 
