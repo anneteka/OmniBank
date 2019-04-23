@@ -1,7 +1,25 @@
-var express = require('express'),
-    app = express(),
-    port = process.env.PORT || 3000;
+import $ from 'jquery';
 
-app.listen(port);
+window.jQuery = $;
+window.$ = $;
 
-console.log('todo list RESTful API server started on: ' + port);
+$(document).on('click', '.done-button', function () {
+    let login = document.getElementById("login").value;
+    sessionStorage.setItem('login',login);
+    jQuery.ajax(
+        {
+            url: 'https://localhost:5000/user',
+            method: 'get',
+            dataType: 'json',
+            success: function (json) {
+
+                json.forEach(user => {
+                    if (user.login === login)
+                        document.location.href = "cabinet.html";
+                });
+            },
+            error: function (xhr) {
+                alert("An error occured: " + xhr.status + " " + xhr.statusText);
+            }
+        });
+});

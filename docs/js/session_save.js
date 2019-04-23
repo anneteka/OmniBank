@@ -20,3 +20,4 @@ $("#other").click(function(){
 $("#tickets").click(function(){
     window.location.href='tickets.html'
 });
+
